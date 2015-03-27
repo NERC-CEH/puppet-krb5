@@ -37,7 +37,7 @@ class krb5 (
   concat::fragment { 'krb5_header':
     target  => $config_file,
     order   => '01',
-    content => template('krb5/krb5.conf.erb')
+    content => template('krb5/krb5header.erb')
   }
   
   concat::fragment{'krb5_domain_header':
