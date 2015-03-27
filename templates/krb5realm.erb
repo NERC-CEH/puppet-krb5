@@ -1,0 +1,13 @@
+<%= @realm %> = {
+  <% if @kdc -%>
+  kdc = <%= @kdc %>
+  <% end -%>
+
+  <% if @admin_server -%>
+  admin_server = <%= @admin_server %>
+  <% end -%>
+  
+  <% if @default_domain -%>
+  default_domain = <%= @default_domain %>
+  <% end -%>
+}

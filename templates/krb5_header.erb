@@ -1,0 +1,24 @@
+[logging]
+default = FILE:/var/log/krb5libs.log
+kdc = FILE:/var/log/krb5kdc.log
+admin_server = FILE:/var/log/kadmind.log
+
+[libdefaults]
+<% if @default_realm -%>
+default_realm = <%= @default_realm %>
+<% end -%>
+<% if @dns_lookup_realm -%>
+dns_lookup_realm = <%= @dns_lookup_realm %>
+<% end -%>
+<% if @dns_lookup_kdc -%>
+dns_lookup_kdc = <%= @dns_lookup_kdc %>
+<% end -%>
+<% if @ticket_lifetime -%>
+ticket_lifetime = <%= @ticket_lifetime %>
+<% end -%>
+<% if @renew_lifetime -%>
+renew_lifetime = <%= @renew_lifetime %>
+<% end -%>
+<% if @forwardable -%>
+forwardable = <%= @forwardable %>
+<% end -%>
