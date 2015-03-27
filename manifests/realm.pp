@@ -1,3 +1,12 @@
+# == Define: krb5::realm
+#
+# Defines a kerberos realm. This allows us to specify things like the ip 
+# address of the kerberos key distribution center for this realm.
+#
+# === Authors
+#
+# Christopher Johnson - cjohn@ceh.ac.uk
+#
 define krb5::realm(
   $kdc,
   $admin_server,
