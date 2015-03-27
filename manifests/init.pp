@@ -13,9 +13,9 @@ class krb5 (
   $dns_lookup_kdc   = 'false',
   $ticket_lifetime  = '24h',
   $renew_lifetime   = '7d',
-  $forwardable      => 'true',
-  $keytab           => undef,
-  $config_file      => '/etc/krb5.conf'
+  $forwardable      = 'true',
+  $keytab           = undef,
+  $config_file      = '/etc/krb5.conf'
 ) {
 
   if $keytab {
