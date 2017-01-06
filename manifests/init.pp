@@ -23,7 +23,7 @@ class krb5 (
       source => $keytab,
       owner  => 'root',
       group  => 'root',
-      mode   => 0600,
+      mode   => '0600',
     }
   }
 
@@ -31,7 +31,7 @@ class krb5 (
     ensure => present,
     owner => 'root',
     group => 'root',
-    mode  => 0644,
+    mode  => '0644',
   }
 
   concat::fragment { 'krb5_header':
